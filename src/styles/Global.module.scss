@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "arial";
+    color: white;
+}
+
+:root {
+    --bgcolor: rgb(31, 29, 29);
+}
+
+.website_container {
+    padding: 30px 0px;
+    background-color: var(--bgcolor);
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #b8b8b8;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
