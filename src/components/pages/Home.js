@@ -1,25 +1,11 @@
 import { useState, useEffect } from "react";
-import jsonData from "./api/movies.json";
-import styles from "./styles/CardContainer.module.scss";
-import Card from "./components/Card";
-function Home() {
-  const [data, setData] = useState([]);
-  const [search, setSearch] = useState("");
+import jsonData from "../../api/movies.json";
+import styles from "../../styles/CardContainer.module.scss";
+import Card from "../Card";
+function Home({ search }) {
   const [movies, setMovies] = useState(jsonData);
-  useEffect(() => {
-    setData(["apple", "banana", "kappa", "raju", "rajan"]);
-  }, []);
-  const searchHandler = (evt) => {
-    setSearch(evt.target.value.toLowerCase());
-  };
   return (
     <div className={styles.cards_container}>
-      <input
-        className={styles.search_bar}
-        onChange={searchHandler}
-        type="text"
-        placeholder="search"
-      />
       <div className={styles.sub_movie_container}>
         {movies.recommendation.map((e, idx) => {
           return (

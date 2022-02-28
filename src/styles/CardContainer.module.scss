@@ -1,25 +1,11 @@
 .movies_container {
     margin: auto;
     padding: 20px;
+    user-select: none;
 }
 
 .recommendation {
     padding: 20px 0px;
-}
-
-.search_bar {
-    padding: 5px;
-    display: block;
-    margin: auto;
-    background-color: var(--bgcolor);
-    outline: none;
-    border: none;
-    border-bottom: 1px solid white;
-    transition: 0.3s all;
-}
-
-.search_bar:focus {
-    animation: search 0.3s infinite;
 }
 
 .movies {
